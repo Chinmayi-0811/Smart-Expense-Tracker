@@ -1,0 +1,51 @@
+.transaction-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:15px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.left h3{
+    margin:0;
+}
+
+.left p{
+    color:gray;
+    margin-top:5px;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.edit-btn{
+    background:#2196f3;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.edit-btn:hover{
+    background:#1976d2;
+}
+
+.delete-btn{
+    background:#f44336;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#d32f2f;
+}

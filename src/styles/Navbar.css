@@ -1,0 +1,78 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(12px);
+    padding:18px 30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.navbar h2{
+    margin:0;
+    color:#4a00e0;
+    font-size:28px;
+}
+
+.navbar p{
+    margin-top:5px;
+    color:#666;
+    font-size:14px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.profile h4{
+    margin:0;
+    color:#333;
+}
+
+.profile p{
+    margin-top:4px;
+    color:#777;
+    font-size:13px;
+}
+
+/* Dark Mode */
+
+.dashboard.dark .navbar{
+    background:#1f1f1f;
+}
+
+.dashboard.dark .navbar h2,
+.dashboard.dark .profile h4{
+    color:white;
+}
+
+.dashboard.dark .navbar p,
+.dashboard.dark .profile p{
+    color:#ccc;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+}

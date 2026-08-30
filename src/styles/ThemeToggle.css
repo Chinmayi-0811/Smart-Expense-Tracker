@@ -1,0 +1,14 @@
+.theme-btn{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#4a00e0;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.theme-btn:hover{
+    background:#3500b3;
+}

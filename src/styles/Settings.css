@@ -1,0 +1,73 @@
+.settings-page{
+    padding:30px;
+    min-height:100vh;
+    background:linear-gradient(135deg,#eef2ff,#f8f9ff);
+}
+
+.settings-page h1{
+    color:#4a00e0;
+    margin-bottom:25px;
+}
+
+.settings-card,
+.about-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    margin-bottom:25px;
+}
+
+.settings-btn{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.clear{
+    background:#ff9800;
+}
+
+.clear:hover{
+    background:#ef6c00;
+}
+
+.reset{
+    background:#f44336;
+}
+
+.reset:hover{
+    background:#d32f2f;
+}
+
+.logout{
+    background:#4a00e0;
+}
+
+.logout:hover{
+    background:#3500b3;
+}
+
+.about-card h2{
+    color:#4a00e0;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    margin:10px 0;
+    color:#555;
+}
+
+@media(max-width:768px){
+
+.settings-page{
+    padding:15px;
+}
+
+}

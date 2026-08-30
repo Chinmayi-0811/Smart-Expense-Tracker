@@ -1,0 +1,101 @@
+.profile-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#eef2ff,#f8f9ff);
+    padding:30px;
+}
+
+.profile-card{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin:auto;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:36px;
+    font-weight:bold;
+}
+
+.profile-card h2{
+    margin-top:15px;
+}
+
+.profile-card p{
+    color:gray;
+    margin-bottom:25px;
+}
+
+.profile-details{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    text-align:left;
+}
+
+.profile-details label{
+    font-weight:bold;
+}
+
+.profile-details input{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.edit-btn,
+.save-btn,
+.cancel-btn{
+    margin-top:20px;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+}
+
+.edit-btn,
+.save-btn{
+    background:#4a00e0;
+}
+
+.cancel-btn{
+    background:#f44336;
+}
+
+.edit-btn:hover,
+.save-btn:hover{
+    background:#3700b3;
+}
+
+.cancel-btn:hover{
+    background:#d32f2f;
+}
+
+@media(max-width:600px){
+
+.profile-card{
+    width:100%;
+}
+
+}

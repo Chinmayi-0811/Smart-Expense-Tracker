@@ -1,0 +1,157 @@
+/* Dashboard */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+    background:linear-gradient(135deg,#eef2ff,#f8f9ff);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Main Content */
+
+.main-content{
+    flex:1;
+    padding:25px;
+}
+
+.dashboard-content{
+    margin-top:20px;
+}
+
+.dashboard-content h1{
+    font-size:32px;
+    color:#333;
+    margin-bottom:25px;
+}
+
+/* Summary Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.card{
+    padding:25px;
+    border-radius:18px;
+    color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:12px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.card h2{
+    font-size:30px;
+}
+
+.income{
+    background:linear-gradient(135deg,#00c853,#43a047);
+}
+
+.expense{
+    background:linear-gradient(135deg,#ff5252,#e53935);
+}
+
+.balance{
+    background:linear-gradient(135deg,#2962ff,#3949ab);
+}
+
+/* Sections */
+
+.transaction-form,
+.transaction-list{
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:18px;
+    margin-top:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Theme Button */
+
+.theme-btn{
+    margin-top:15px;
+    margin-bottom:20px;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:scale(1.05);
+}
+
+/* Dark Mode */
+
+.dashboard.dark{
+    background:#121212;
+}
+
+.dashboard.dark .main-content{
+    background:#121212;
+}
+
+.dashboard.dark .dashboard-content h1{
+    color:white;
+}
+
+.dashboard.dark .transaction-form,
+.dashboard.dark .transaction-list{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dashboard.dark .card{
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.dashboard.dark input,
+.dashboard.dark select,
+.dashboard.dark textarea{
+    background:#2d2d2d;
+    color:white;
+    border:1px solid #555;
+}
+
+.dashboard.dark h2,
+.dashboard.dark h3,
+.dashboard.dark p,
+.dashboard.dark label{
+    color:white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .dashboard{
+        flex-direction:column;
+    }
+
+    .main-content{
+        padding:15px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}
